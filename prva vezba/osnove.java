@@ -21,6 +21,7 @@ public class osnove {
 
         int razlikaUGodinama = godinaRodjenjaStudenta - godinaRodjenjaProfesora;
 
+        System.out.print("Razlika u godinama je: ");
         System.out.println(razlikaUGodinama);
 
     }
