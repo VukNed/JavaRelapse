@@ -18,15 +18,23 @@ public class numberGuessingGame {
             System.out.println("Make your guess");
             int guess = s.nextInt();
 
+            //it has to begin with 4, because the 1st value for i is 0
+            int trial = 4 - i;
+
             if (guess < randomInt) {
-                System.out.println("Aim higher");
+                System.out.println("Aim higher, you have " + trial + " guesses left");
             } else {
                 if (guess > randomInt) {
-                System.out.println("Aim lower");
+                System.out.println("Aim lower, you have " + trial + " guesses left");
                 } else {
                 System.out.println("Thats the number!");
+                break;
+                }
             }
-            }
+                // if i use single = java reads it as boolean
+                if (trial == 0) {
+                    System.out.println("Game Over");
+                }
 
         }
 
