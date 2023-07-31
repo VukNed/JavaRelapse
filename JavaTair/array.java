@@ -3,20 +3,21 @@ import java.util.Scanner;
 public class array {
     public static void main(String[] args) {
         
-        int b1, b2, b3;
-        
+        int[] array = new int[3];
+        // [0, 1, 2]
+        int sum = 0;
+
         Scanner s = new Scanner(System.in);
 
-        System.out.println("First number");
-        b1 = s.nextInt();
+        for (int i=0; i<3; i++) {
+            System.out.println("Type next number: ");
+            array[i] = s.nextInt();
 
-        System.out.println("First number");
-        b2 = s.nextInt();
+            sum += array[i];
 
-        System.out.println("First number");
-        b3 = s.nextInt();
-
-        int srednjaVrednost = (b1 + b2 + b3) / 3;
-        System.out.println("Average is " + srednjaVrednost);
+        }
+        
+        double average = sum / 3.0;
+        System.out.println("Average is: " + average);
     }
 }
