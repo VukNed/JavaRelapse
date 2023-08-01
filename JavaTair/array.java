@@ -19,6 +19,8 @@ public class array {
             array[i] = s.nextInt();
 
             sum += array[i];
+            // System.out.println(array);
+            // System.out.println(sum);
 
         }
         
