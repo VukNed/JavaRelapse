@@ -17,8 +17,8 @@ public class sortingAlgoritamSoloAttempt {
         }
 
         // sorting algorithm
-        for (int k=0; k<array.lenght; k++){
-            for (int l=0; l<array.lenght; l++){
+        for (int k=0; k<rec; k++){
+            for (int l = k + 1; l<rec; l++){
 
                 int temp = 0;
                 if (array[k] > array [l]) {
