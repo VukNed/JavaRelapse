@@ -26,8 +26,9 @@ public class matrix {
         for (int i=0; i < rows; i++){
             for(int j=0; j<cols; j++){
                 //System.out.println("bilo sta");
-               System.out.println(data[i][j] + "\t");
+               System.out.print(data[i][j] + "\t");
             }
+            System.out.println();
         }
 
     }
