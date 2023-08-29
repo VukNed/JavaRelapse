@@ -14,6 +14,7 @@ public class matrixAdditionAndSubtraction {
         int matrix1[][] = new int [rows][cols];
         int matrix2[][] = new int [rows][cols];
         int sum[][] = new int [rows][cols];
+        int sub[][] = new int [rows][cols];
 
         System.out.println("Fill in the matrix 1");
 
@@ -52,6 +53,15 @@ public class matrixAdditionAndSubtraction {
 
                 sum[i][j] = matrix1[i][j] + matrix2[i][j];
                 System.out.print(sum[i][j] + "\t");
+            }
+            System.out.println();
+        }
+        System.out.println("Sub of 2 matixes: ");
+        for( int i=0; i<rows; i++){
+            for(int j=0; j<cols; j++){
+
+                sub[i][j] = matrix1[i][j] - matrix2[i][j];
+                System.out.print(sub[i][j] + "\t");
             }
             System.out.println();
         }
